@@ -1,0 +1,14 @@
+<h2>Shopping Cart</h2>
+<ul ng-repeat="result in $ctrl.shoppingCart">
+    <li>Product: {{result.product}}</li>
+    <li>Price: {{result.price}}</li>
+    <li>Quantity: {{result.quantity}}</li>
+    <button ng-click = "$ctrl.removeItem($index)" class ="x">X</button>
+</ul>
+<h2>Add Item</h2>
+<form>
+<input type = "text" placeholder="Product" ng-model = "$ctrl.product"/>
+<input type = "number" placeholder="Price" ng-model = "$ctrl.price"/>
+<input type = "number" placeholder="Quanity" ng-model = "$ctrl.quantity"/>
+<button ng-click="$ctrl.addItem()">Submit</button>
+</form>

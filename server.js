@@ -1,6 +1,6 @@
 const express = require("express");
 const cart = require('./cart-routes');
-const rooms = require('./room-routes');
+const items = require('./room-routes');
 const app = express();
 const port = 8888;
 
@@ -11,7 +11,7 @@ const port = 8888;
 app.use(express.json());
 app.use(express.static('./public'));
 app.use('/cart-items', cart);
-app.use('/rooms', rooms);
+app.use('/shopping', items);
 
 
 app.listen(port, () => console.log(`listening on port: ${port}`));

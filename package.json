@@ -1,7 +1,6 @@
 {
   "name": "expresslab",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,5 +14,14 @@
   },
   "devDependencies": {
     "nodemon": "^1.18.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achetcu/ExpressLab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/achetcu/ExpressLab/issues"
+  },
+  "homepage": "https://github.com/achetcu/ExpressLab#readme",
+  "description": ""
 }
